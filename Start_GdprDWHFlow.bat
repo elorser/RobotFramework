@@ -19,4 +19,4 @@ REM Scrive il timestamp nel file di interfaccia
 echo TIMESTAMP=%timestamp% > .\CeckDWHFlow.txt
 
 
-call robot --outputdir .\Output\%timestamp% -X  --suite StartDWHFlow  --test StartDWHFlowTestSession  StartDWHFlow.robot
+call robot --outputdir .\Output\%timestamp% -X  --suite Start_DWHFlow  --test Start_GdprDWHFlowTestSession  Start_DWHFlow.robot
