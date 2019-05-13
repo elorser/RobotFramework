@@ -16,7 +16,7 @@ set timestamp=%year%%month%%day%%dtstamp%%minute%%seconds%
 REM Cancella il file di interfaccia
 IF EXIST .\CeckDWHFlow.txt DEL /F .\CeckDWHFlow.txt
 REM Scrive il timestamp nel file di interfaccia
-echo TIMESTAMP=%timestamp% > .\CeckDWHFlow.txt
+echo START_FLOW=%timestamp% > .\CeckDWHFlow.txt
 
 
 call robot --outputdir .\Output -X  --suite Start_DWHFlow  --test Start_GdprDWHFlowTestSession  Start_DWHFlow.robot
