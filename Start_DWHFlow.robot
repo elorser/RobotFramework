@@ -9,7 +9,7 @@ ${userDWHSit1}    dsadm
 ${pwdDWHSit1}     295dsadm
 ${Gdp000WorkflowMaster}    Gdp000WorkflowMaster    # Flusso master GDPR
 ${jobPathGDPR}    /home/dsadm/Sergio/Automation/GDPR/    # Path del workflow GDPR
-${jobMasterGDPR}    Gdp000WorkflowMaste.sh    # WorkFlow master GDPR
+${jobMasterGDPR}    Gdp000WorkflowMaster.sh    # WorkFlow master GDPR
 ${jobPropertiesGDPR}    Gdp000WorkflowMaster.properties    # Properties master GDPR
 
 *** Test Cases ***
