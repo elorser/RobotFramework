@@ -49,9 +49,9 @@ Start GdprDWHFlowTestSession
     # If all checks are well It changes the working directory and starts the job
     Run Keyword If    not ${conClosed}    Set Client Configuration    prompt=$
     Run Keyword If    not ${conClosed}    Write    cd ${jobPathGDPR}
-    ${output}=    Run Keyword If    not ${conClosed}    Read Until Prompt
+    ${newline}=    Run Keyword If    not ${conClosed}    Read Until Prompt
     Run Keyword If    not ${conClosed}    Write    nohup ${jobMasterGDPR} -start ${jobPropertiesGDPR} &
-    ${output}=    Run Keyword If    not ${conClosed}    Read Until Prompt
+    ${newline}=    Run Keyword If    not ${conClosed}    Read Until Prompt
     #
     # It closes the connection
     Run Keyword If    not ${conClosed}    Close Connection
