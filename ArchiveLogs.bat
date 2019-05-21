@@ -16,7 +16,6 @@ REM Scrive il timestamp nel file di interfaccia
 echo END_FLOW=%timestamp% >> .\CeckDWHFlow.txt
 
 mkdir .\Output\%timestamp%
-cp .\log.html .\Output\%timestamp%
-cp .\report.html .\Output\%timestamp%
-cp .\output.xml .\Output\%timestamp%
-exit
+copy log.html Output\%timestamp%
+copy report.html Output\%timestamp%
+copy output.xml Output\%timestamp%
