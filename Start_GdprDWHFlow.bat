@@ -20,4 +20,4 @@ echo START_FLOW=%timestamp% > .\CeckDWHFlow.txt
 
 
 REM call robot --outputdir Output -X  --suite Start_DWHFlow  --test Start_GdprDWHFlowTestSession  Start_DWHFlow.robot
-robot -T -d Output --suite Start_DWHFlow  --test Start_GdprDWHFlowTestSession  Start_DWHFlow.robot
+robot -T -d .\Output --suite Start_DWHFlow  --test Start_GdprDWHFlowTestSession  Start_DWHFlow.robot
